@@ -53,9 +53,9 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder> 
                 }
                 public void setItem(Movie item){
                      movieName.setText(item.movieNm);
-                     peopleCount.setText(item.audiCnt);
-                     movieRank.setText(item.rank);
-                     movieCount.setText(item.audiAcc);
+                     peopleCount.setText(item.audiCnt + "명");
+                     movieRank.setText(item.rank + "위");
+                     movieCount.setText(item.audiAcc + "명");
                      movieOpen.setText(item.openDt);
                 }
 
